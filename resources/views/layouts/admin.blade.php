@@ -14,7 +14,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Admin | Eshop</title>
 
     <meta name="description" content="" />
 
@@ -39,6 +39,7 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/assets/vendor/libs/apex-charts/apex-charts.css" />
 
@@ -116,7 +117,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">E-shop</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -129,12 +130,23 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item active">
-              <a href="index.html" class="menu-link">
+              <a href="{{ route('admin.addProduct') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
+                <div data-i18n="Analytics">Add-Product</div>
               </a>
             </li>
-
+            <li class="menu-item active">
+              <a href="{{ route('admin.updateProduct') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Update-Product</div>
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="{{ route('admin.deleteProduct') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Delete-Product</div>
+              </a>
+            </li>
             <!-- Layouts -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -455,7 +467,7 @@
         <div class="layout-page">
           <!-- Navbar -->
 
-          <nav
+          {{-- <nav
             class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar"
           >
@@ -555,7 +567,7 @@
                 <!--/ User -->
               </ul>
             </div>
-          </nav>
+          </nav> --}}
 
           <!-- / Navbar -->
 
@@ -572,26 +584,7 @@
                 <script>
                   document.write(new Date().getFullYear());
                 </script>
-                , made with ❤️ by
-                <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
-              </div>
-              <div>
-                <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-
-                <a
-                  href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                  target="_blank"
-                  class="footer-link me-4"
-                  >Documentation</a
-                >
-
-                <a
-                  href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                  target="_blank"
-                  class="footer-link me-4"
-                  >Support</a
-                >
+                , made with ❤️  by
               </div>
             </div>
           </footer>
@@ -609,14 +602,6 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <div class="buy-now">
-      <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Upgrade to Pro</a
-      >
-    </div>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -636,8 +621,11 @@
 
     <!-- Page JS -->
     <script src="/assets/js/dashboards-analytics.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="/js/useFetch.js"></script>
   </body>
 </html>

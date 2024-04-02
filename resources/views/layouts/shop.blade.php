@@ -15,7 +15,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Karma Shop</title>
+    <title>E-Shop</title>
     <!--
   CSS
 
@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="/css/ion.rangeSlider.css" />
     <link rel="stylesheet" href="/css/ion.rangeSlider.skinFlat.css" />
     <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -75,23 +76,37 @@
                                 </ul>
                             </li>
                             <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                    role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Pages</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="{{ route('shop.login') }}">Login</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ route('shop.tracking') }}">Tracking</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ route('shop.elements') }}">Elements</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('shop.login') }}">Login</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            ">register</a></li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="{{ route('shop.elements') }}">Elements</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('shop.contact') }}">Contact</a>
                             </li>
+
                         </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a>
+                        <ul class="nav navbar-nav navbar-right ">
+                            <li class="nav-item">
+                                <button class="search d-none"><span class="lnr lnr-user" id="User"></span></button>
                             </li>
                             <li class="nav-item">
                                 <button class="search"><span class="lnr lnr-magnifier"
                                         id="search"></span></button>
+                            </li>
+                        </ul>
+
+                        <ul class="d-flex align-items-center nav navbar-nav navbar-right">
+                            <li class="nav-item">
+                                <a class="genric-btn primary-border radius text-dark" href="{{ route('shop.register') }}">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="genric-btn primary radius text-dark" href="{{ route('shop.login') }}">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -214,10 +229,14 @@
     <script src="/js/countdown.js"></script>
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!--gmaps Js-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="/js/gmaps.min.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/useFetch.js"></script>
 </body>
 
 </html>

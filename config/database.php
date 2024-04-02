@@ -30,6 +30,11 @@ return [
     */
 
     'connections' => [
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('DB_URI', '<connection string>'),
+            'database' => 'eshop_viva_db',
+        ],
 
         'sqlite' => [
             'driver' => 'sqlite',
