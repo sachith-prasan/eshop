@@ -16,6 +16,14 @@ class ProductController extends Controller
         return view('admin.updateProduct', [
             'products' => $products
         ]);
+
+    }
+
+    public function navigateToAdd() {
+        $categories = Category::all();
+        return view('admin.addProduct', [
+            'categories' => $categories
+        ]);
     }
 
     public function addCategory(Request $request){

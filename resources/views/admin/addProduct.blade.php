@@ -22,9 +22,7 @@
                                 <label class="input-group-text" for="inputGroupFile01">Category</label>
                                 <select type="text" class="form-control" name="category">
                                     <option selected>Choose...</option>
-                                    <option value="1">Shoes</option>
-                                    <option value="2">T-shirts</option>
-                                    <option value="3">Bags</option>
+                                    <option value="1">{{ $categories->categories }}</option>
                                 </select>
                             </div>
                             <div class="input-group">
