@@ -22,7 +22,9 @@
                                 <label class="input-group-text" for="inputGroupFile01">Category</label>
                                 <select type="text" class="form-control" name="category">
                                     <option selected>Choose...</option>
-                                    <option value="1">{{ $categories->categories }}</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->name }}">{{ $category->name }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="input-group">
@@ -81,7 +83,8 @@
                                                 data-bs-dismiss="modal">
                                                 Close
                                             </button>
-                                            <button type="button" class="btn btn-primary" onclick="addCategory()">Add Category</button>
+                                            <button type="button" class="btn btn-primary" onclick="addCategory()">Add
+                                                Category</button>
                                         </div>
                                     </div>
                                 </div>

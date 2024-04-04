@@ -63,7 +63,7 @@
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a class="nav-link" href="{{ route('shop.category') }}">Shop
                                             Category</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-product.html">Product
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('shop.singleProduct') }}">Product
                                             Details</a></li>
                                     <li class="nav-item"><a class="nav-link" href="{{ route('shop.checkout') }}">Product
                                             Checkout</a>

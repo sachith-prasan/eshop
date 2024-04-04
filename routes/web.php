@@ -51,6 +51,9 @@ Route::get('/forgotPassword', function () {
 Route::get('/OTPverification', function () {
     return view('otp');
 })->name('shop.otp');
+Route::get('/singleProduct', function () {
+    return view('singleProduct');
+})->name('shop.singleProduct');
 
 
 Route::prefix('admin')->group(function () {

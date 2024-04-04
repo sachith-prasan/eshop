@@ -1,6 +1,5 @@
 @extends('layouts.shop')
 @section('content')
-
     <!-- start banner Area -->
     <section class="banner-area">
         <div class="container">
@@ -179,11 +178,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
                         <div class="section-title">
-                            <h1>Latest Products</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et
-                                dolore
-                                magna aliqua.</p>
+                            <h1>Go to the next Products</h1>
+                            <p>To provide you with a suitable description for your shop products, I'll need to know a bit
+                                more about what kind of products you offer. Could you please tell me what type of products
+                                you're selling and any specific details or features you'd like to highlight?</p>
                         </div>
                     </div>
                 </div>
@@ -193,15 +191,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p1.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product name here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -209,11 +206,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -226,15 +219,15 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p2.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product name here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
                                     <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -242,11 +235,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -259,14 +248,13 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p3.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product name here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -274,11 +262,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -291,15 +275,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p4.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product name here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -307,11 +290,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -324,15 +303,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p5.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product name here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -340,11 +318,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -357,15 +331,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p6.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product name here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -373,11 +346,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -390,15 +359,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p7.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product name here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -406,11 +374,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -423,15 +387,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p8.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product name here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -439,11 +402,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -460,11 +419,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
                         <div class="section-title">
-                            <h1>Coming Products</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et
-                                dolore
-                                magna aliqua.</p>
+                            <h1>Go to the Next Products</h1>
+                            <p>To provide you with a suitable description for your shop products, I'll need to know a bit
+                                more about what kind of products you offer. Could you please tell me what type of products
+                                you're selling and any specific details or features you'd like to highlight?</p>
                         </div>
                     </div>
                 </div>
@@ -474,15 +432,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p6.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product title here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -490,11 +447,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -507,15 +460,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p8.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product title here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -523,11 +475,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -540,15 +488,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p3.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product title here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -556,11 +503,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -573,15 +516,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p5.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product title here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -589,11 +531,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -606,15 +544,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p1.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product title here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -622,11 +559,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -639,15 +572,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p4.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product title here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -655,11 +587,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -672,15 +600,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p1.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product title here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -688,11 +615,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
@@ -705,15 +628,14 @@
                         <div class="single-product">
                             <img class="img-fluid" src="/img/product/p8.jpg" alt="">
                             <div class="product-details">
-                                <h6>addidas New Hammer sole
-                                    for Sports person</h6>
+                                <h6>Product title here</h6>
+                                <h6>Product description here</h6>
                                 <div class="price">
                                     <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
                                 </div>
                                 <div class="prd-bottom">
 
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.cart') }}" class="social-info">
                                         <span class="ti-bag"></span>
                                         <p class="hover-text">add to bag</p>
                                     </a>
@@ -721,11 +643,7 @@
                                         <span class="lnr lnr-heart"></span>
                                         <p class="hover-text">Wishlist</p>
                                     </a>
-                                    <a href="" class="social-info">
-                                        <span class="lnr lnr-sync"></span>
-                                        <p class="hover-text">compare</p>
-                                    </a>
-                                    <a href="" class="social-info">
+                                    <a href="{{ Route('shop.singleProduct') }}" class="social-info">
                                         <span class="lnr lnr-move"></span>
                                         <p class="hover-text">view more</p>
                                     </a>
